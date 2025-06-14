@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="desktop-view">
+        <nav id="main-nav">
+            <ul id="nav-container"></ul>
+        </nav>
+        
+        <div class="window" id="readme-window" style="top: 20%; left: 30%; z-index: 99;">
+             <div class="title-bar readme-title-bar">
+                <span id="readme-title" class="title-text"></span>
+                <button class="close-btn" aria-label="Fechar janela de boas-vindas">X</button>
+            </div>
+            <div class="window-content">
+                <h2 id="readme-heading" class="window-heading"></h2>
+                <div id="readme-text-container"></div>
+            </div>
+        </div>
+
+        <div class="window" id="about-window" style="top: 15%; left: 10%; display: none;">
+            <div class="title-bar">
+                <span id="about-title" class="title-text"></span>
+                <button class="close-btn" aria-label="Fechar janela Sobre">X</button>
+            </div>
+            <div class="window-content">
+                <h2 id="about-heading" class="window-heading"></h2>
+                <div class="about-content-wrapper">
+                    <div class="about-image-container">
+                        <img id="profile-image" src="" alt="">
+                    </div>
+                    <div id="about-text-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="projects-window" style="top: 25%; left: 50%; display: none;">
+            <div class="title-bar">
+                <span id="projects-title" class="title-text"></span>
+                <button class="close-btn" aria-label="Fechar janela de Projetos">X</button>
+            </div>
+            <div class="window-content">
+                <h2 id="projects-heading" class="window-heading"></h2>
+                <ul class="project-list" id="project-list-container"></ul>
+            </div>
+        </div>
+        
+        <div class="window" id="contact-window" style="top: 50%; left: 20%; display: none;">
+             <div class="title-bar">
+                <span id="contact-title" class="title-text"></span>
+                <button class="close-btn" aria-label="Fechar janela de Contato">X</button>
+            </div>
+            <div class="window-content">
+                 <h2 id="contact-heading" class="window-heading"></h2>
+                 <ul id="contact-links-container"></ul>
+            </div>
+        </div>
+    </main>
+
+    <main id="project-view" style="display: none;"></main>
+
+    <footer id="main-footer">
+        Feito com 💜 por Ikiro &copy; <span id="current-year"></span>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
